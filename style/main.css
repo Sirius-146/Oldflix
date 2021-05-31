@@ -1,0 +1,123 @@
+:root{
+    --vermelho:#E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elemento base*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 15px;
+    color: var(--vermelho);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    cursor: default;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/Doctor-Who.jpg');
+    height:400px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 60%;
+    cursor: default;
+}
+
+.filme-principal .titulo{
+    margin-top: 4%; /*ou 15%*/
+}
+
+.filme-principal .botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #AAA; /*mudar para #AAA (opcional)*/
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.filme-principal .botao:hover{
+    color: #fff; /*mudar p/ #fff (muda a cor da letra ao passar o mouse)*/
+    background-color: black; /*mudar p/ preto*/
+}
+
+.filme-principal .botao i{
+    margin-right: 5px;
+}
+
+.filme-principal .container{
+    margin-left: 20px;
+}
+
+.box-filme{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.series{
+    margin: 10px 10px;
+    color: #aaa;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.filmes{
+    margin: 10px 10px;
+    color: #aaa;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+div a{
+    cursor: pointer;
+}
+div a:hover{
+    color: #fff;
+}
